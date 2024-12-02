@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    margin: 0;
+}
+
+body {
+    height: 100svh;
+    width: 100svw;
+    overflow: hidden;
+    background-color: rgb(251, 238, 221);
+}
+
+.container {
+    height: 100svh;
+    width: 100svw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#main-text {
+    font-size: 30px;
+    text-align: center;
+    color: rgb(134, 93, 40);
+    font-family: "DM Serif Text", serif;
+    z-index: 10;
+}
+
+a {
+    will-change: filter;
+}
+
+.before-appear {
+    position: relative;
+    filter: blur(28px);
+    right: 150px;
+    bottom: 30px;
+}
+
+.appeared {
+    filter: none;
+    right: 0;
+    bottom: 0;
+}
+
+.disappearing {
+    filter: blur(40px);
+    right: -150px;
+    bottom: 30px;
+    opacity: 0;
+}
+
+.cloud {
+    -webkit-mask-image: url("images/cloud.svg");
+    mask-image: url("images/cloud.svg");
+    mask-repeat: no-repeat;
+    user-select: none;
+    width: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 2s, filter 2s;
+}
+
+@keyframes float-effect {
+    0%, 100% {
+        transform: translate(0px, 0px);
+    }
+    33% {
+        transform: translate(-2px, 2px);
+    }
+    66% {
+        transform: translate(2px, -2px);
+    }
+}
+
+#cloud-1 {
+    height: 80px;
+    mask-size: 160px;
+    mask-position: 46% 52%;
+    top: 2vh;
+    left: 0.5vw;
+    animation: float-effect 8.6s infinite cubic-bezier(0.49, 0.02, 0.52, 0.99);
+}
+#cloud-2 {
+    height: 130px;
+    mask-size: 150px;
+    mask-position: 55% 67%;
+    top: -2vh;
+    left: 23vw;
+    animation: float-effect 9s infinite cubic-bezier(0.49, 0.02, 0.52, 0.99);
+}
+#cloud-3 {
+    height: 95px;
+    mask-size: 210px;
+    mask-position: 45.5% 49%;
+    top: 0;
+    left: 45vw;
+    animation: float-effect 12s infinite cubic-bezier(0.49, 0.02, 0.52, 0.99);
+}
+#cloud-4 {
+    height: 145px;
+    mask-size: 126px;
+    mask-position: 32% 78%;
+    top: -2.2vh;
+    left: 73vw;
+    animation: float-effect 10s infinite cubic-bezier(0.49, 0.02, 0.52, 0.99);
+}
+#cloud-5 {
+    height: 170px;
+    mask-size: 170px;
+    mask-position: 46.5% 88%;
+    top: 7vh;
+    left: 3vw;
+    animation: float-effect 8.5s infinite cubic-bezier(0.49, 0.02, 0.52, 0.99);
+}
+#cloud-6 {
+    height: 170px;
+    -webkit-mask-image: url("images/cloudReflected.svg");
+    mask-image: url("images/cloudReflected.svg");
+    mask-size: 230px;
+    mask-position: 55% 50%;
+    top: 3.5vh;
+    left: 28vw;
+    animation: float-effect 11.5s infinite cubic-bezier(0.49, 0.02, 0.52, 0.99);
+}
+#cloud-7 {
+    height: 170px;
+    mask-size: 150px;
+    mask-position: 53% 59%;
+    top: 3vh;
+    left: 61vw;
+    animation: float-effect 10.2s infinite cubic-bezier(0.49, 0.02, 0.52, 0.99);
+}
+#cloud-8 {
+    height: 145px;
+    mask-size: 145px;
+    mask-position: 45% 62%;
+    top: 8vh;
+    left: 79vw;
+    animation: float-effect 9.2s infinite cubic-bezier(0.49, 0.02, 0.52, 0.99);
+}
+#cloud-9 {
+    height: 145px;
+    mask-size: 165px;
+    mask-position: 36% 80%;
+    top: 17vh;
+    left: -2vw;
+    animation: float-effect 8s infinite cubic-bezier(0.49, 0.02, 0.52, 0.99);
+}
+#cloud-10 {
+    height: 200px;
+    -webkit-mask-image: url("images/cloudReflected.svg");
+    mask-image: url("images/cloudReflected.svg");
+    mask-size: 240px;
+    mask-position: 54% 79%;
+    top: 24vh;
+    left: 0.5vw;
+    animation: float-effect 14s infinite cubic-bezier(0.49, 0.02, 0.52, 0.99);
+}
+#cloud-11 {
+    height: 80px;
+    mask-size: 160px;
+    mask-position: 54% 57%;
+    top: 21vh;
+    left: 23vw;
+    animation: float-effect 10.1s infinite cubic-bezier(0.49, 0.02, 0.52, 0.99);
+}
+#cloud-12 {
+    height: 130px;
+    mask-size: 315px;
+    mask-position: 45.5% 54%;
+    top: 23.5vh;
+    left: 55.5vw;
+    animation: float-effect 13s infinite cubic-bezier(0.49, 0.02, 0.52, 0.99);
+}
+#cloud-13 {
+    height: 180px;
+    -webkit-mask-image: url("images/cloudReflected.svg");
+    mask-image: url("images/cloudReflected.svg");
+    mask-size: 240px;
+    mask-position: 56% 56%;
+    top: 56vh;
+    left: 10px;
+    animation: float-effect 13s infinite cubic-bezier(0.49, 0.02, 0.52, 0.99);
+}
+#cloud-14 {
+    height: 90px;
+    -webkit-mask-image: url("images/cloudReflected.svg");
+    mask-image: url("images/cloudReflected.svg");
+    mask-size: 210px;
+    mask-position: 56% 49%;
+    top: 64vh;
+    left: 32vw;
+    animation: float-effect 9.3s infinite cubic-bezier(0.49, 0.02, 0.52, 0.99);
+}
+#cloud-15 {
+    height: 175px;
+    mask-size: 200px;
+    mask-position: 49% 74%;
+    top: 59vh;
+    left: 65vw;
+    animation: float-effect 10.5s infinite cubic-bezier(0.49, 0.02, 0.52, 0.99);
+}
+#cloud-16 {
+    height: 160px;
+    mask-size: 190px;
+    mask-position: 45% 68%;
+    top: 14vh;
+    left: 49vw;
+    animation: float-effect 11.6s infinite cubic-bezier(0.49, 0.02, 0.52, 0.99);
+    z-index: -1;
+}
+#cloud-19 {
+    height: 130px;
+    mask-size: 340px;
+    mask-position: 53% 52.5%;
+    top: 72.5vh;
+    left: 47vw;
+    animation: float-effect 11.4s infinite cubic-bezier(0.49, 0.02, 0.52, 0.99);
+}
+#cloud-20 {
+    height: 180px;
+    mask-size: 330px;
+    mask-position: 15% 52.5%;
+    top: 70.5vh;
+    left: -12vw;
+    animation: float-effect 12.5s infinite cubic-bezier(0.49, 0.02, 0.52, 0.99);
+}
