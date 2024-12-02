@@ -77,8 +77,8 @@ function checkNameInput() {
         terminal.appendChild(secretKey);
     } else if (textInputs[textInputs.length-1].textContent.replace(/\s+/g, '').toLowerCase() === "godiswithme") {
         const HBlink = document.createElement("a");
-        HBlink.textContent = "https://www.bible.com/";
-        HBlink.setAttribute("href", "https://www.bible.com/");
+        HBlink.textContent = "bogdantuz.github.io/BrightBirthday/HappyBirthday/HB.html";
+        HBlink.setAttribute("href", "../HappyBirthday/HB.html");
         terminal.appendChild(HBlink);
         lastSession = true;
     } else if (textInputs[textInputs.length-1].textContent.replace(/\s+/g, '').toLowerCase() === "bogdan") {
